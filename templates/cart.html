@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cart</title>
+</head>
+<body>
+    <h1>Your cart:</h1>
+    {% if cart %}
+        <ul>{% for product, amount in cart.items() %}
+            <li>{{ product }} x {{ amount }}
+            <a href="{{ url_for('remove', product=product) }}">[Delete]</a>
+            </li>
+            {% endfor %}
+            
+        </ul>
+    {% else %}
+    <p>Cart is empty</p>
+    {% endif %}
+    
+    <a href="/">Home</a> |
+    <a href="/check-out">Checkout</a>
+</body>
+</html>
