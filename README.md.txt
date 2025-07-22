@@ -3,7 +3,7 @@
 This is a simple online shop application built with Flask and SQLite.  
 It includes basic cart functionality, product management, checkout, and receipt generation.
 
-"Database is created automatically on first run."
+Database is created automatically on first run.
 
 ## Features:
 
