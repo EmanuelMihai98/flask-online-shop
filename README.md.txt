@@ -23,7 +23,7 @@ It includes basic cart functionality, product management, checkout, and receipt 
 
 1. Clone the repo:
 ```bash
-git clone https://github.com/USERNAME/online-shop-flask.git
+git clone https://github.com/EmanuelMihai98/online-shop-flask.git
 cd online-shop-flask
 
 2.pip install flask
