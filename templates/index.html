@@ -20,6 +20,9 @@
             </li>
         {% endfor %}
         </ul>
+        {% if is_admin %}
+    <p><a href="{{ url_for('add_product_to_db') }}">[Add New Product]</a></p>
+    {% endif %}
     <h2>Add in cart:</h2>
     <form method="POST" action="{{ url_for('add_product')}}">
         <input type="text" name="product" placeholder="ex:water">
